@@ -11,16 +11,16 @@ This script is modified from
   * For windows, you need to download a windows build, unzip it, put its path into your system's environment variables.   
 * Download `video.py` file from this project, put it into your `GFPGAN` folder
 * Create a `data` folder under your `GFPGAN` folder
-* Then create this folder tree under that data folder:
-├─results
-│  ├─cmp
-│  ├─cropped_faces
-│  ├─restored_faces
-│  └─restored_imgs
-├─results_mp4_videos
-├─results_videos
-├─upload
-└─videos
+* Then create this folder tree under that data folder:  
+├─results  
+│  ├─cmp  
+│  ├─cropped_faces  
+│  ├─restored_faces  
+│  └─restored_imgs  
+├─results_mp4_videos  
+├─results_videos  
+├─upload  
+└─videos  
 
 # How to use
 * Put your videos into "data/videos"
