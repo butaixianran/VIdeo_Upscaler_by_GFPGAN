@@ -25,6 +25,7 @@ This script is modified from
 # How to use
 * Put your videos into "data/videos"
 * Go back to `GFPGAN` folder
+* Edit `video.py`, modify its fps and upscale size for your video and save file.
 * Run `python video.py` and wait.
 * Upscaled new video will be under `GFPGAN/data/results_mp4_videos`
 * Done
