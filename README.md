@@ -7,7 +7,7 @@ This script is modified from
 # Install
 * Install [GFPGAN](https://github.com/TencentARC/GFPGAN)
 * Install [opencv-python](https://pypi.org/project/opencv-python/)
-* Install [ffmpeg ](https://ffmpeg.org/).
+* Install [ffmpeg ](https://ffmpeg.org/) for command line
   * For windows, you need to download a windows build, unzip it, put its path into your system's environment variables.   
 * Download `video.py` file from this project, put it into your `GFPGAN` folder
 * Create a `data` folder under your `GFPGAN` folder
