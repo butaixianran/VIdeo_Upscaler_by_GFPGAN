@@ -1,5 +1,5 @@
 # Video Upscaler Script wit GFPGAN
-A VIdeo Upscaler script based on GFPGAN.  
+A Video Upscaler script based on GFPGAN.  
 
 This script is modified from  
 [https://github.com/GeeveGeorge/GFPGAN-for-Video-SR](https://github.com/GeeveGeorge/GFPGAN-for-Video-SR)  
