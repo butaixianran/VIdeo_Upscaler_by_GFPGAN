@@ -1,4 +1,4 @@
-# Video Upscaler Script wit GFPGAN
+# Video Upscaler Script with GFPGAN
 A Video Upscaler script based on GFPGAN.  
 
 This script is modified from  
