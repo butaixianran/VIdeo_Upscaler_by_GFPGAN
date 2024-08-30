@@ -9,6 +9,7 @@ This script is modified from
 * Install [GFPGAN](https://github.com/TencentARC/GFPGAN)
 * Install `Real-ESRGAN` with command `pip install realesrgan` in your python environment
 * Download Model [GFPGANv1.4.pth](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth) to `Your GFPGAN Folder/gfpgan/weights`
+* Donwload Model [detection_Resnet50_Final.pth](https://github.com/xinntao/facexlib/releases/download/v0.1.0/detection_Resnet50_Final.pth) to `Your GFPGAN Folder/gfpgan/weights`
 * Install [opencv-python](https://pypi.org/project/opencv-python/)
 * Install [ffmpeg ](https://ffmpeg.org/) for command line
   * For windows, you need to download a windows build, unzip it, put its path into your system's environment variables.   
