@@ -62,7 +62,7 @@ https://pytorch.org/get-started/locally/
 
 There are 2 ways to make it work with torch 2.x.
 * Go to basicsr's folder in your python environment, find `basicsr/data/degradations.py`, replace all `torchvision.transforms.functional_tensor` with `torchvision.transforms.functional`.  
-* Or, do not install `basicsr` with pip server, which is an old version. Just install it from its source code in github:   
+* Or, do not install `basicsr` with pip server, which is an old version. Just install it from its source code:   
 `pip install git+https://github.com/XPixelGroup/BasicSR`   
 
 
