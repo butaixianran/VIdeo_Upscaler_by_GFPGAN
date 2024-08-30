@@ -39,6 +39,7 @@ This script is modified from
 Compare to Real-ESRGAN, GFPGAN can restore faces nicely. But, it gonna be very very slow. Only use it for short videos.  
 
 # Common Issue
+
 ### Get the real error Msg
 If you see any ffmpeg error msg like ` Format avi detected only with low score of 1, misdetection possible`, that's not the real error.  
 
@@ -53,15 +54,12 @@ Your file and folder path should only use English character without any space in
 When using GFPGAN for the first time, it gonna download some models from github. One for `Real-ESRGAN`, others for `GFPGAN`. If downloading failed, it will show the downloading link and its target local folder path. So you can just manually download these models and put them into the right folder.  
 
 ### Can not find `torchvision.transforms.functional_tensor`
-GFPGAN is based on a project called `basicsr`. This project uses function `torchvision.transforms.functional_tensor` which is removed from torchvision v0.17+. So, it only works with pytorch 1.x. If you really want to use it with torch 2.x, you can go to basicsr's folder, find `basicsr/data/degradations.py`, replace all `torchvision.transforms.functional_tensor` to `torchvision.transforms.functional`.  
+GFPGAN is based on a project called `basicsr`. This project uses function `torchvision.transforms.functional_tensor` which is removed from torchvision v0.17+. So, it only works with pytorch 1.x.  
 
-Actually, the source code of `basicsr`, is already changed `torchvision.transforms.functional_tensor` to `torchvision.transforms.functional`, but they didn't update the version number. So when we installing `basicsr` with pip, we are installing an old version of `basicsr`. If you know how to work with python environment, you can install `basicsr` from its github source code, which will work with torch 2.x.  
-
-
-
-
-
-
-
+### Work with torch 2.x
+GFPGAN is based on a project called `basicsr`. There are 2 ways to make it works with torch 2.x.
+* Go to basicsr's folder in your python environment, find `basicsr/data/degradations.py`, replace all `torchvision.transforms.functional_tensor` with `torchvision.transforms.functional`.  
+* Or, do not install `basicsr` with pip, which is an old version. Just install it from its source code in github. Do something like this:   
+`pip install git+https://github.com/XPixelGroup/BasicSR`   
 
 
