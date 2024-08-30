@@ -34,4 +34,27 @@ This script is modified from
 * Done
 
 # Notice
-Compare to Real-ESRGAN, GFPGAN can restore faces nicely. But, it gonna be very slow. Only use it for short videos.  
+Compare to Real-ESRGAN, GFPGAN can restore faces nicely. But, it gonna be very very slow. Only use it for short videos.  
+
+# Common Issue
+### FFMpeg error "Format avi detected only with low score of 1, misdetection possible"
+The real issue is your GFPGAN failed. So ffmpeg can not get the result video it need. The real error msg, is the line before `walking`. 
+
+A basic rule for this project is: if your GFPGAN works, this project works. If your GFPGAN fails, this project fails too. So you better checking following section for issues of GFPGAN.  
+
+### Unrecognized arguments and file path
+Your file and folder path should only use English character without any space in it.  
+
+# Comman Issue of GFPGAN
+### Downloading failed
+When using GFPGAN for the first time, it gonna download 2 models from github. One for `GFPGAN`, one for `Real-ESRGAN`. If downloading failed, it will show the downloading link and its target local folder path. So you can just manually download these 2 models and put them into the right folder.  
+
+### Can not find `torchvision.transforms.functional_tensor`
+GFPGAN is based on a project called `basicsr`. This project only works with pytorch 1.x. If you really want to use it with torch 2.x, you can go to basicsr's folder, find `basicsr/data/degradations.py`, replace all `torchvision.transforms.functional_tensor` to `torchvision.transforms.functional`. 
+
+
+
+
+
+
+
