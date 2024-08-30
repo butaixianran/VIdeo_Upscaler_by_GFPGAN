@@ -57,7 +57,7 @@ When using GFPGAN for the first time, it gonna download some models from github.
 GFPGAN is based on a project called `basicsr`. This project uses function `torchvision.transforms.functional_tensor` which is removed from torchvision v0.17+. So, it only works with pytorch 1.x.  
 
 ### Working with torch 2.x
-1. you need to install torch 2.x by following its official installation document:
+1. You need to install torch 2.x by following its official installation document:
 https://pytorch.org/get-started/locally/  
 
 2. You need to update your package `basicsr`. Which is needed by GFPGAN, but only works with pytorch 1.x if you install it with pip. 
