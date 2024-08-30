@@ -56,7 +56,7 @@ When using GFPGAN for the first time, it gonna download some models from github.
 ### Can not find `torchvision.transforms.functional_tensor`
 GFPGAN is based on a project called `basicsr`. This project uses function `torchvision.transforms.functional_tensor` which is removed from torchvision v0.17+. So, it only works with pytorch 1.x.  
 
-### Work with torch 2.x
+### Working with torch 2.x
 GFPGAN is based on a project called `basicsr`. There are 2 ways to make it works with torch 2.x.
 * Go to basicsr's folder in your python environment, find `basicsr/data/degradations.py`, replace all `torchvision.transforms.functional_tensor` with `torchvision.transforms.functional`.  
 * Or, do not install `basicsr` with pip, which is an old version. Just install it from its source code in github. Do something like this:   
