@@ -48,7 +48,7 @@ Your file and folder path should only use English character without any space in
 
 # Comman Issue of GFPGAN
 ### Downloading failed
-When using GFPGAN for the first time, it gonna download 2 models from github. One for `GFPGAN`, one for `Real-ESRGAN`. If downloading failed, it will show the downloading link and its target local folder path. So you can just manually download these 2 models and put them into the right folder.  
+When using GFPGAN for the first time, it gonna download 3 models from github. two for `GFPGAN`, one for `Real-ESRGAN`. If downloading failed, it will show the downloading link and its target local folder path. So you can just manually download these models and put them into the right folder.  
 
 ### Can not find `torchvision.transforms.functional_tensor`
 GFPGAN is based on a project called `basicsr`. This project only works with pytorch 1.x. If you really want to use it with torch 2.x, you can go to basicsr's folder, find `basicsr/data/degradations.py`, replace all `torchvision.transforms.functional_tensor` to `torchvision.transforms.functional`. 
