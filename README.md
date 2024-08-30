@@ -8,8 +8,9 @@ This script is modified from
 * Install [pytorch 1.x and torchvision](https://pytorch.org/get-started/previous-versions/)  (torch 2.x won't work)
 * Install [GFPGAN](https://github.com/TencentARC/GFPGAN)
 * Install `Real-ESRGAN` with command `pip install realesrgan` in your python environment
-* Download Model [GFPGANv1.4.pth](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth) to `Your GFPGAN Folder/gfpgan/weights`
-* Donwload Model [detection_Resnet50_Final.pth](https://github.com/xinntao/facexlib/releases/download/v0.1.0/detection_Resnet50_Final.pth) to `Your GFPGAN Folder/gfpgan/weights`
+* Download model [GFPGANv1.4.pth](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth) to `Your GFPGAN Folder/gfpgan/weights`
+* Download model [detection_Resnet50_Final.pth](https://github.com/xinntao/facexlib/releases/download/v0.1.0/detection_Resnet50_Final.pth) to `Your GFPGAN Folder/gfpgan/weights`
+* Download model [parsing_parsenet.pth](https://github.com/xinntao/facexlib/releases/download/v0.2.2/parsing_parsenet.pth) to `Your GFPGAN Folder/gfpgan/weights`
 * Install [opencv-python](https://pypi.org/project/opencv-python/)
 * Install [ffmpeg ](https://ffmpeg.org/) for command line
   * For windows, you need to download a windows build, unzip it, put its path into your system's environment variables.   
@@ -49,7 +50,7 @@ A basic rule for this project is: if your GFPGAN works, this project works. If y
 Your file and folder path should only use English character without any space in it.  
 
 ### Downloading failed
-When using GFPGAN for the first time, it gonna download 3 models from github. two for `GFPGAN`, one for `Real-ESRGAN`. If downloading failed, it will show the downloading link and its target local folder path. So you can just manually download these models and put them into the right folder.  
+When using GFPGAN for the first time, it gonna download some models from github. One for `Real-ESRGAN`, others for `GFPGAN`. If downloading failed, it will show the downloading link and its target local folder path. So you can just manually download these models and put them into the right folder.  
 
 ### Can not find `torchvision.transforms.functional_tensor`
 GFPGAN is based on a project called `basicsr`. This project only works with pytorch 1.x. If you really want to use it with torch 2.x, you can go to basicsr's folder, find `basicsr/data/degradations.py`, replace all `torchvision.transforms.functional_tensor` to `torchvision.transforms.functional`. 
