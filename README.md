@@ -43,7 +43,7 @@ If you see any ffmpeg error msg like ` Format avi detected only with low score o
 
 The real issue is your GFPGAN failed. So ffmpeg can not get the result video it need. The real error msg, is the line before `walking`. 
 
-A basic rule for this project is: if your GFPGAN works, this project works. If your GFPGAN fails, this project fails too. So you better checking following issues of GFPGAN.  
+A basic rule for this project is: if your GFPGAN works, this project works. If your GFPGAN fails, this project fails too. So you better check following issues of GFPGAN.  
 
 ### Unrecognized arguments and file path
 Your file and folder path should only use English character without any space in it.  
