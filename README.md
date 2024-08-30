@@ -7,7 +7,7 @@ This script is modified from
 # Install
 * Install [pytorch 1.x and torchvision](https://pytorch.org/get-started/previous-versions/)  (torch 2.x won't work)
 * Install [GFPGAN](https://github.com/TencentARC/GFPGAN)
-* Install `Real-ESRGAN` with command `pip install realesrgan`
+* Install `Real-ESRGAN` with command `pip install realesrgan` in your python environment
 * Download Model [GFPGANv1.4.pth](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth) to `Your GFPGAN Folder/gfpgan/weights`
 * Install [opencv-python](https://pypi.org/project/opencv-python/)
 * Install [ffmpeg ](https://ffmpeg.org/) for command line
