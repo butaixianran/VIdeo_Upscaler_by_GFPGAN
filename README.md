@@ -1,5 +1,6 @@
 # Video Upscaler Script with GFPGAN
 A Video Upscaler script based on GFPGAN.  
+Compare to Real-ESRGAN, GFPGAN can restore faces nicely. But, it gonna be very very slow. Only use it for short videos.  
 
 This script is modified from  
 [https://github.com/GeeveGeorge/GFPGAN-for-Video-SR](https://github.com/GeeveGeorge/GFPGAN-for-Video-SR)  
@@ -34,9 +35,6 @@ This script is modified from
 * Run `python video.py` and wait.
 * Upscaled new video will be under `GFPGAN/data/results_mp4_videos`
 * Done
-
-# Notice
-Compare to Real-ESRGAN, GFPGAN can restore faces nicely. But, it gonna be very very slow. Only use it for short videos.  
 
 # Common Issue
 
